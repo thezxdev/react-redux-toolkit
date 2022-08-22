@@ -5,15 +5,17 @@ import { Provider } from 'react-redux';
 import { store } from './store';
 
 import App from './App';
-import './index.css';
 import { PokemonApp } from './PokemonApp';
+import { TodoApp } from './TodoApp';
+import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* Proveer el store de manera global */}
     <Provider store={ store }>
       {/* <App /> */}
-      <PokemonApp />
+      {/* <PokemonApp /> */}
+      <TodoApp />
     </Provider>
   </React.StrictMode>
 )
